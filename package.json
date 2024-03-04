@@ -1,16 +1,10 @@
 {
     "name": "jumpstart-shop-nextjs",
     "private": true,
-    "scripts": {
-        "setup": "node setup.mjs",
-        "dev": "next dev -p 9019",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
     "dependencies": {
         "@contentful/rich-text-react-renderer": "^15.11.1",
-        "contentful": "^9.1.5",
+        "@netlify/functions": "^2.6.0",
+        "contentful": "^10.12.7",
         "lodash": "^4.17.21",
         "next": "^12.3.4",
         "react": "17.0.2",
