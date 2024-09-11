@@ -60,7 +60,7 @@ export async function getStaticProps(context) {
     // const product = await getEntriesByContentType("product", slug);
     
     // fetch product from serverless function
-    const url = process.env['HOST'] + "/.netlify/functions/product&slug=" + slug;
+    const url = process.env['HOST'] + "/.netlify/functions/product?slug=" + slug;
     const product = await fetch(url).then(res => res.json());
     
     return {
